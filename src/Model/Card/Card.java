@@ -3,13 +3,18 @@ package Model.Card;
 import Model.Deck.Deck;
 import Model.Pawn.Pawn;
 
+import javax.swing.*;
+import java.awt.*;
+
 /**
  * <b>Abstract class</b> Cards
  * @author glamprou 3976
  */
-public abstract class Card {
+public  abstract class Card {
     private int number;
     private String ability;
+    private ImageIcon image;
+    private Image img, nImg;
     /**
      * <b>Accessor</b>
      * @return number of card
@@ -47,9 +52,10 @@ public abstract class Card {
     /**<b>Constructor</b>
      * @param number
      */
-    Card(int number,String ability){
+    Card(int number,String ability,ImageIcon image){
         this.number=number;
         this.ability=ability;
+        this.image=image;
     }
 
     /**
@@ -59,4 +65,9 @@ public abstract class Card {
      * @param deck
      */
     public abstract boolean movePawn(Pawn pawn, Deck deck);
+    public Image getImg(){
+        img=image.getImage();
+        nImg=img.getScaledInstance(100,140,Image.SCALE_SMOOTH);
+        return nImg;
+    }
 }

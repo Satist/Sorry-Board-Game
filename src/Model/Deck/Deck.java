@@ -12,13 +12,13 @@ import java.util.Random;
 public class Deck {
     public static final int[] CARD_RANK = {0, 1, 2, 3, 4, 5, 7, 8, 10, 11, 12};
     public final int DECK_SIZE = 44;
-    List<Card> deck;
-    private Square[] board;
-    private StartSquare redStartSquare,yellowStartSquare;
-    private HomeSquare redHomeSquare,yellowHomeSquare;
-    private SafetyZoneSquare[] redSafetyZoneSquares,yellowSafetyZoneSquares;
-    private Player player1,player2;
-    private Pawn pawnRed1,pawnRed2,pawnYellow1,pawnYellow2;
+    protected List<Card> deck;
+    protected Square[] board;
+    protected StartSquare redStartSquare,yellowStartSquare;
+    protected HomeSquare redHomeSquare,yellowHomeSquare;
+    protected SafetyZoneSquare[] redSafetyZoneSquares,yellowSafetyZoneSquares;
+    protected Player player1,player2;
+    protected Pawn pawnRed1,pawnRed2,pawnYellow1,pawnYellow2;
     /**
      * <b>Constructor</b>
      */
@@ -124,7 +124,7 @@ public class Deck {
     }
 
     /**
-     * Initializing the pawns and th players
+     * Initializing the pawns and the players
      */
     public void init_pawnsnplayers(){
         //Init Pawns
@@ -167,11 +167,26 @@ public class Deck {
      * @param deck
      * @return True if the deck is empty
      */
-    public boolean check_emptyDeck(List<Deck> deck){
-        return deck.size() == 0;
+    public void check_emptyDeck(List<Deck> deck){
+        if (deck.size() == 0){
+            createDeck();
+        }
     }
 
-    public void movePawn(Pawn pawn,Square[] board,){
+    /**
+     * Moves the pawn
+     * @param pawn
+     * @param board
+     */
+    public void move(Pawn pawn,Square[] board,Card card){
 
+    }
+
+    /**
+     * Checks if player can fold
+     * @return
+     */
+    public boolean check_fold(){
+        return true;
     }
 }
