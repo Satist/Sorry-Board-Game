@@ -66,6 +66,11 @@ public class Player {
         this.pawn2 = pawn2;
     }
 
+    /**
+     * Checks if player's turn
+     * @param player
+     * @return
+     */
     public boolean checkPlays(Player player){
         return true;
     }

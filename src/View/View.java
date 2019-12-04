@@ -1,7 +1,35 @@
 package View;
 
-public class View {
+import Model.Deck.Deck;
 
+import javax.swing.*;
+
+public class View extends JFrame {
+    static JFrame window;
+    static ImageIcon backgroundicon= new ImageIcon("C:\\Users\\glamprou\\IdeaProjects\\Project Sorry!\\src\\images\\background.png");
+    static ImageIcon sorryicon= new ImageIcon("C:\\Users\\glamprou\\IdeaProjects\\Project Sorry!\\src\\images\\sorryImage.png");
+    static JLabel sorry=new JLabel(sorryicon);
+    static JLabel back=new JLabel(backgroundicon);
+    static JMenuBar menuBar;
+    static JLabel[] Square=new JLabel[61];
+    Deck board;
+    static JLabel startRed;
+    static JLabel startYellow;
+    static JLabel homeRed;
+    static JLabel homeYellow;
+    static JButton pawnRed1;
+    static JButton pawnRed2;
+    static JButton pawnYellow1;
+    static JButton pawnYellow2;
+    static JButton cardFront;
+    static JLabel cardBack;
+    static JLabel underCards;
+    static JTextArea infobox;
+    static JButton fold;
+
+    public void createWindow(){
+
+    }
     /**
      * Creates the Green background
      */
