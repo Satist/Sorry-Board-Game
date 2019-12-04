@@ -2,6 +2,8 @@ package Model.Square;
 
 import Model.Player.Player;
 
+import javax.swing.*;
+
 public class SafetyZoneSquare extends Square{
     private Player player;
     /**
@@ -10,8 +12,8 @@ public class SafetyZoneSquare extends Square{
      * @param position
      * @param color
      */
-    public SafetyZoneSquare(int position, String color) {
-        super(position, color);
+    public SafetyZoneSquare(int position, String color, ImageIcon image) {
+        super(position, color,image);
     }
 
     /**

@@ -3,6 +3,8 @@ package Model.Card;
 import Model.Deck.Deck;
 import Model.Pawn.Pawn;
 
+import javax.swing.*;
+
 /**
  * Card 10
  */
@@ -13,7 +15,7 @@ public class NumberTenCard extends SimpleNumberCard {
      * @param number
      */
     public NumberTenCard(int number) {
-        super(number,"One move back");
+        super(number,"One move back",new ImageIcon("C:\\Users\\glamprou\\IdeaProjects\\Project Sorry!\\src\\images\\cards\\card10.png"));
     }
 
     /**

@@ -14,7 +14,6 @@ public  abstract class Card {
     private int number;
     private String ability;
     private ImageIcon image;
-    private Image img, nImg;
     /**
      * <b>Accessor</b>
      * @return number of card
@@ -65,9 +64,13 @@ public  abstract class Card {
      * @param deck
      */
     public abstract boolean movePawn(Pawn pawn, Deck deck);
-    public Image getImg(){
-        img=image.getImage();
-        nImg=img.getScaledInstance(100,140,Image.SCALE_SMOOTH);
-        return nImg;
+
+    /**
+     * <b>Accessor</b>
+     * <b>Postcondtion</b> Returns the image of the card
+     * @return image
+     */
+    public ImageIcon getImage() {
+        return image;
     }
 }

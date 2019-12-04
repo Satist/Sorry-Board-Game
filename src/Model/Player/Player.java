@@ -67,6 +67,6 @@ public class Player {
     }
 
     public boolean checkPlays(Player player){
-
+        return true;
     }
 }

@@ -1,5 +1,7 @@
 package Model.Square;
 
+import javax.swing.*;
+
 public class InternalSlideSquare extends SlideSquare{
     /**
      * <b>Constructor</b>
@@ -7,7 +9,7 @@ public class InternalSlideSquare extends SlideSquare{
      * @param position
      * @param color
      */
-    public InternalSlideSquare(int position, String color) {
-        super(position, color);
+    public InternalSlideSquare(int position, String color, ImageIcon image) {
+        super(position, color,image);
     }
 }

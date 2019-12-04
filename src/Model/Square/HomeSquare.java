@@ -2,6 +2,8 @@ package Model.Square;
 
 import Model.Player.Player;
 
+import javax.swing.*;
+
 public class HomeSquare extends Square {
     private Player player;
     /**
@@ -10,8 +12,8 @@ public class HomeSquare extends Square {
      * @param position
      * @param color
      */
-    public HomeSquare(int position, String color) {
-        super(position, color);
+    public HomeSquare(int position, String color, ImageIcon image) {
+        super(position, color,image);
     }
 
     /**

@@ -8,7 +8,7 @@ public class Controller {
 
     /**
      * <b>Transformer</b>
-     * <b>Postcondition<b/> Sets Turn of player
+     * <b>Postcondition</b> Sets Turn of player
      * @param turn
      */
     public void setTurn(boolean turn) {
@@ -27,8 +27,6 @@ public class Controller {
      * If all conditions are true move the pawn
      */
     public void check_move(){
-        if(getTurn())
-            deck.move();
     }
 
     /**

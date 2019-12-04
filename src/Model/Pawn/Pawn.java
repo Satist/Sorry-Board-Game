@@ -2,13 +2,17 @@ package Model.Pawn;
 
 import Model.Square.Square;
 
+import javax.swing.*;
+
 public class Pawn {
     private String color;
     private Square square;
     private boolean state;
-    public Pawn(String color, Square square){
+    private ImageIcon image;
+    public Pawn(String color, Square square, ImageIcon image){
         this.color=color;
         this.square=square;
+        this.image=image;
     }
 
     /**
@@ -61,6 +65,15 @@ public class Pawn {
      */
     public void setState(boolean state) {
         this.state = state;
+    }
+
+    /**
+     * <b>Accessor</b>
+     * <b>Postcondtion</b> Returns the image of the pawn
+     * @return image
+     */
+    public ImageIcon getImage() {
+        return image;
     }
 }
 

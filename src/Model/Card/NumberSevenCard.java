@@ -3,6 +3,8 @@ package Model.Card;
 import Model.Deck.Deck;
 import Model.Pawn.Pawn;
 
+import javax.swing.*;
+
 /**
  * Card 7
  */
@@ -13,7 +15,7 @@ public class NumberSevenCard extends SimpleNumberCard {
      * @param number
      */
     public NumberSevenCard(int number) {
-        super(number,"7 moves front or split 7 moves between your pawns");
+        super(number,"7 moves front or split 7 moves between your pawns",new ImageIcon("C:\\Users\\glamprou\\IdeaProjects\\Project Sorry!\\src\\images\\cards\\card7.png"));
     }
 
     /**

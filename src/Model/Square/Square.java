@@ -2,6 +2,8 @@ package Model.Square;
 
 import Model.Pawn.Pawn;
 
+import javax.swing.*;
+
 /**
  * <b>Abstract class</b> Square
  * @author glamprou 3976
@@ -9,15 +11,16 @@ import Model.Pawn.Pawn;
 public abstract class Square {
     private int position;
     private String color="Λευκο";
-
+    private ImageIcon image;
     /**
      * <b>Constructor</b>
      * @param position
      * @param color
      */
-    Square(int position,String color){
+    Square(int position,String color,ImageIcon image){
         this.position=position;
         this.color=color;
+        this.image=image;
     }
 
     /**
@@ -63,6 +66,6 @@ public abstract class Square {
      * @return True if there is a pawn
      */
     public boolean checkPawn(Pawn pawn){
-
+        return true;
     }
 }
