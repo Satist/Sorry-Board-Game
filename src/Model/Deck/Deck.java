@@ -14,12 +14,12 @@ public class Deck {
     public static final int[] CARD_RANK = {0, 1, 2, 3, 4, 5, 7, 8, 10, 11, 12};
     public final int DECK_SIZE = 44;
     protected List<Card> deck;
-    protected Square[] board;
-    protected StartSquare redStartSquare,yellowStartSquare;
-    protected HomeSquare redHomeSquare,yellowHomeSquare;
-    protected SafetyZoneSquare[] redSafetyZoneSquares,yellowSafetyZoneSquares;
-    protected Player player1,player2;
-    protected Pawn pawnRed1,pawnRed2,pawnYellow1,pawnYellow2;
+    public Square[] board;
+    public StartSquare redStartSquare,yellowStartSquare;
+    public HomeSquare redHomeSquare,yellowHomeSquare;
+    public SafetyZoneSquare[] redSafetyZoneSquares,yellowSafetyZoneSquares;
+    public Player player1,player2;
+    public Pawn pawnRed1,pawnRed2,pawnYellow1,pawnYellow2;
     /**
      * <b>Constructor</b>
      */
@@ -115,21 +115,21 @@ public class Deck {
         board[55]= new EndSlideSquare(55,"green",new ImageIcon("C:\\Users\\glamprou\\IdeaProjects\\Project Sorry!\\src\\images\\slides\\greenSlideEnd.png"));
         //initialize the simple square tiles
         for (int i=1;i<=60;i++){
-            if(board[i]!=null)
+            if(board[i]==null)
                 board[i]=new SimpleSquare(i,"white");
         }
         //Init Start Squares
-        redStartSquare=new StartSquare(0,"red",new ImageIcon(""));
-        yellowStartSquare= new StartSquare(0,"yellow",new ImageIcon(""));
+        redStartSquare=new StartSquare(0,"red",new ImageIcon("C:\\Users\\glamprou\\IdeaProjects\\Project Sorry!\\src\\images\\HomeSquare.png"));
+        yellowStartSquare= new StartSquare(0,"yellow",new ImageIcon("C:\\Users\\glamprou\\IdeaProjects\\Project Sorry!\\src\\images\\HomeSquare.png"));
         //Init Home Squares
-        redHomeSquare= new HomeSquare(0,"red",new ImageIcon(""));
-        yellowHomeSquare= new HomeSquare(0,"yellow",new ImageIcon(""));
+        redHomeSquare= new HomeSquare(0,"red",new ImageIcon("C:\\Users\\glamprou\\IdeaProjects\\Project Sorry!\\src\\images\\HomeSquare.png"));
+        yellowHomeSquare= new HomeSquare(0,"yellow",new ImageIcon("C:\\Users\\glamprou\\IdeaProjects\\Project Sorry!\\src\\images\\HomeSquare.png"));
         //Init Safety Zone Squares
         redSafetyZoneSquares=new SafetyZoneSquare[5];
         yellowSafetyZoneSquares=new SafetyZoneSquare[5];
         for (int i=0;i<5;i++){
-            redSafetyZoneSquares[i]=new SafetyZoneSquare(i,"red",new ImageIcon(""));
-            yellowSafetyZoneSquares[i]=new SafetyZoneSquare(i,"yellow", new ImageIcon(""));
+            redSafetyZoneSquares[i]=new SafetyZoneSquare(i,"red",new ImageIcon("C:\\Users\\glamprou\\IdeaProjects\\Project Sorry!\\src\\images\\redSafetySquare.png"));
+            yellowSafetyZoneSquares[i]=new SafetyZoneSquare(i,"yellow", new ImageIcon("C:\\Users\\glamprou\\IdeaProjects\\Project Sorry!\\src\\images\\yellowSafetySquare.png"));
         }
     }
 
@@ -162,10 +162,10 @@ public class Deck {
 
     /**
      * Picks card and deletes element from list
-     * @param deck
+     * @param
      * @return the card pick
      */
-    public Card card_pick(List<Card> deck){
+    public Card card_pick(){
         Card cardPick;
         cardPick=deck.get(0);
         deck.remove(0);

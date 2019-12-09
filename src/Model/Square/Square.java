@@ -60,6 +60,15 @@ public abstract class Square {
     }
 
     /**
+     * <b>Accessor</b>
+     * <b>Postcondition</b> Returns the image of the square
+     * @return
+     */
+    public ImageIcon getImage() {
+        return image;
+    }
+
+    /**
      * <b>Observer</b>
      * Checks if there is a pawn on the square
      * @param pawn
