@@ -1,17 +1,26 @@
 package Controller;
 
+import Model.Card.Card;
 import Model.Deck.Deck;
+import Model.Pawn.Pawn;
 
 public class Controller {
     protected Deck deck;
-    private boolean turn;
+    public static String path="/home/satist/IdeaProjects/Project_Sorry/src/images/";
+    private int turn;
+    private boolean first=true;
+
+    public Controller(Deck deck,int turn){
+        this.deck=deck;
+        this.turn=turn;
+    }
 
     /**
      * <b>Transformer</b>
      * <b>Postcondition</b> Sets Turn of player
      * @param turn
      */
-    public void setTurn(boolean turn) {
+    public void setTurn(int turn) {
         this.turn = turn;
     }
 
@@ -20,15 +29,19 @@ public class Controller {
      * <b>Postcondition</b> Returns the turn of player
      * @return turn
      */
-    public boolean getTurn(){
+    public int getTurn(){
         return turn;
     }
-    /**
-     * If all conditions are true move the pawn
-     */
-    public void check_move(){
+
+
+    public boolean getfirstTime(){
+        return first;
     }
 
+
+    public void setfirstTime(){
+        first=false;
+    }
     /**
      * Ends the game
      */
@@ -36,10 +49,5 @@ public class Controller {
 
     }
 
-    /**
-     * Sets the winner
-     */
-    public void winner(){
 
-    }
 }

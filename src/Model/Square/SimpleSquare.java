@@ -1,5 +1,7 @@
 package Model.Square;
 
+import Controller.Controller;
+
 import javax.swing.*;
 
 public class SimpleSquare extends Square {
@@ -10,6 +12,6 @@ public class SimpleSquare extends Square {
      * @param color
      */
     public SimpleSquare(int position, String color) {
-        super(position, color,new ImageIcon("C:\\Users\\glamprou\\IdeaProjects\\Project Sorry!\\src\\images\\simpleSquare.png"));
+        super(position, color,new ImageIcon(Controller.path+"simpleSquare.png"));
     }
 }

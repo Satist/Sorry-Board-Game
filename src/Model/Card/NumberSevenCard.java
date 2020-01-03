@@ -1,5 +1,6 @@
 package Model.Card;
 
+import Controller.Controller;
 import Model.Deck.Deck;
 import Model.Pawn.Pawn;
 
@@ -15,7 +16,7 @@ public class NumberSevenCard extends SimpleNumberCard {
      * @param number
      */
     public NumberSevenCard(int number) {
-        super(number,"7 moves front or split 7 moves between your pawns",new ImageIcon("C:\\Users\\glamprou\\IdeaProjects\\Project Sorry!\\src\\images\\cards\\card7.png"));
+        super(number,"7 moves front or split 7 moves between your pawns",new ImageIcon(Controller.path+"cards/card7.png"));
     }
 
     /**

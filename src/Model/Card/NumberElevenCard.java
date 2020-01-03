@@ -2,6 +2,7 @@ package Model.Card;
 
 import Model.Deck.Deck;
 import Model.Pawn.Pawn;
+import Controller.Controller;
 
 import javax.swing.*;
 
@@ -15,7 +16,7 @@ public class NumberElevenCard extends SimpleNumberCard {
      * @param number
      */
     public NumberElevenCard(int number) {
-        super(number,"11 Moves front or exchange position with an opponents pawn",new ImageIcon("C:\\Users\\glamprou\\IdeaProjects\\Project Sorry!\\src\\images\\cards\\card11.png"));
+        super(number,"11 Moves front or exchange position with an opponents pawn",new ImageIcon(Controller.path+"cards/card11.png"));
     }
 
     /**

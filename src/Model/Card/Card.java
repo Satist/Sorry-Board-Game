@@ -2,6 +2,7 @@ package Model.Card;
 
 import Model.Deck.Deck;
 import Model.Pawn.Pawn;
+import Controller.Controller;
 
 import javax.swing.*;
 import java.awt.*;

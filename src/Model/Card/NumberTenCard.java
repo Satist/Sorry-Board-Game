@@ -1,5 +1,6 @@
 package Model.Card;
 
+import Controller.Controller;
 import Model.Deck.Deck;
 import Model.Pawn.Pawn;
 
@@ -15,7 +16,7 @@ public class NumberTenCard extends SimpleNumberCard {
      * @param number
      */
     public NumberTenCard(int number) {
-        super(number,"One move back",new ImageIcon("C:\\Users\\glamprou\\IdeaProjects\\Project Sorry!\\src\\images\\cards\\card10.png"));
+        super(number,"One move back",new ImageIcon(Controller.path+"cards/card10.png"));
     }
 
     /**
