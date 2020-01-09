@@ -1,8 +1,6 @@
 package Controller;
 
-import Model.Card.Card;
 import Model.Deck.Deck;
-import Model.Pawn.Pawn;
 
 public class Controller {
     protected Deck deck;

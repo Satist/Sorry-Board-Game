@@ -162,7 +162,6 @@ public class Deck {
 
     /**
      * Picks card and deletes element from list
-     * @param
      * @return the card pick
      */
     public Card card_pick(){

@@ -1,11 +1,9 @@
 package View;
 
+import Controller.Controller;
 import Model.Card.Card;
 import Model.Card.SimpleNumberCard;
-import Model.Card.SorryCard;
 import Model.Deck.Deck;
-import Controller.Controller;
-import Model.Pawn.Pawn;
 import Model.Square.*;
 
 import javax.swing.*;
@@ -338,9 +336,8 @@ public class View extends JFrame implements ActionListener {
         }
     }
 
-    public static void main(String[] stringkaki) {
-        View skata = new View();
-
+    public static void main(String[] view) {
+        View sorry = new View();
     }
 
     @Override

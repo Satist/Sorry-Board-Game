@@ -29,9 +29,7 @@ public class NumberSevenCard extends SimpleNumberCard {
      * @return True for success
      */
     public boolean split(Pawn pawn1, Pawn pawn2, int split1, int split2){
-        if(split1+split2!=7)
-            return false;
-        return true;
+        return split1 + split2 == 7;
     }
     @Override
     public boolean movePawn(Pawn pawn, Deck deck) {
